@@ -70,12 +70,12 @@ We can now take a look at the first classification method. We will use the datas
 
 | # | filepath                                              | start_index | end_index | label |
 |---|--------------------------------------------------------|-------------|-----------|-------|
-| 1 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet      | 22464       | 44928     | White |
-| 2 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet         | 44928       | 67392     | Black |
-| 3 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet         | 67392       | 89856     | Black |
-| 4 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet         | 89856       | 112320    | White |
-| 5 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet         | 112320      | 134784    | Grey |
-| 6 | gs://featurestore-spinewise/083-SPINE-2023-11-23-6-57-3-1700825489-v3.1.1.parquet         | 134784      | 157248    | Black |
+| 1 | file0      | 22464       | 44928     | White |
+| 2 | file0         | 44928       | 67392     | Black |
+| 3 | file0         | 67392       | 89856     | Black |
+| 4 | file0         | 89856       | 112320    | White |
+| 5 | file0         | 112320      | 134784    | Grey |
+| 6 | file0         | 134784      | 157248    | Black |
 
 
 As shown, each file was split into frames of 22,464 samples (a multiple of 64, close to 22,500), because we aim to classify 15-minute segments.  
